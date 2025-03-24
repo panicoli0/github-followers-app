@@ -7,9 +7,21 @@ struct FollowersListView: View {
     @State private var errorMessage = ""
     @State private var showError = false
     
+    // Define grid layout
+    private let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
-        List(followers, id: \.id) { follower in
-            FollowerRowView(follower: follower)
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 20) {
+                ForEach(followers, id: \.id) { follower in
+                    FollowerCardView(follower: follower)
+                }
+            }
+            .padding(.horizontal)
         }
         .navigationTitle(username)
         .onAppear(perform: getFollowers)

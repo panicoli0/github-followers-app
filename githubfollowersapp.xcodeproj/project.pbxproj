@@ -13,7 +13,7 @@
 		290934D62D8B52850054FF0A /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290934D52D8B52850054FF0A /* GFButton.swift */; };
 		29100A552D91EC150063DD70 /* FollowersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29100A542D91EC150063DD70 /* FollowersListViewController.swift */; };
 		29100A582D91ECC90063DD70 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29100A572D91ECC90063DD70 /* Followers.swift */; };
-		29100A5A2D91ED070063DD70 /* FollowerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29100A592D91ED070063DD70 /* FollowerRowView.swift */; };
+		29100A5A2D91ED070063DD70 /* FollowerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29100A592D91ED070063DD70 /* FollowerCardView.swift */; };
 		29100A5D2D91F1B50063DD70 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29100A5C2D91F1B50063DD70 /* NetworkManager.swift */; };
 		296362432D8B28D6005F7CE3 /* GithubfollowersappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296362422D8B28D6005F7CE3 /* GithubfollowersappApp.swift */; };
 		296362492D8B28D7005F7CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296362482D8B28D7005F7CE3 /* Assets.xcassets */; };
@@ -52,7 +52,7 @@
 		290934D52D8B52850054FF0A /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = SOURCE_ROOT; };
 		29100A542D91EC150063DD70 /* FollowersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListViewController.swift; sourceTree = "<group>"; };
 		29100A572D91ECC90063DD70 /* Followers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
-		29100A592D91ED070063DD70 /* FollowerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerRowView.swift; sourceTree = "<group>"; };
+		29100A592D91ED070063DD70 /* FollowerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCardView.swift; sourceTree = "<group>"; };
 		29100A5C2D91F1B50063DD70 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2963623F2D8B28D6005F7CE3 /* githubfollowersapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubfollowersapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296362422D8B28D6005F7CE3 /* GithubfollowersappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubfollowersappApp.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				299A62B22D8C41DB003B88BA /* UIViewController.swift */,
 				2906BE192D8C6E1C000F5A78 /* SearchView.swift */,
 				29100A542D91EC150063DD70 /* FollowersListViewController.swift */,
-				29100A592D91ED070063DD70 /* FollowerRowView.swift */,
+				29100A592D91ED070063DD70 /* FollowerCardView.swift */,
 			);
 			path = Githubfollowersapp;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2906BE1A2D8C6E1C000F5A78 /* SearchView.swift in Sources */,
-				29100A5A2D91ED070063DD70 /* FollowerRowView.swift in Sources */,
+				29100A5A2D91ED070063DD70 /* FollowerCardView.swift in Sources */,
 				299A62AF2D8C4128003B88BA /* GFAlertContainerView.swift in Sources */,
 				290934D62D8B52850054FF0A /* GFButton.swift in Sources */,
 				29100A582D91ECC90063DD70 /* Followers.swift in Sources */,
