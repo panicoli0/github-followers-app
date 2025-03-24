@@ -3,9 +3,10 @@ import SwiftUI
 struct SearchView: View {
     @State private var username: String = ""
     @State private var showAlert = false
+    @State private var navigateToFollowers = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {  // Changed from NavigationView to NavigationStack
             VStack(spacing: 20) {
                 Spacer()
                 
@@ -45,6 +46,9 @@ struct SearchView: View {
             } message: {
                 Text("Please enter a username. We need to know who to look for 😀")
             }
+            .navigationDestination(isPresented: $navigateToFollowers) {
+                FollowersListView(username: username)
+            }
         }
     }
     
@@ -53,8 +57,7 @@ struct SearchView: View {
             showAlert = true
             return
         }
-        print("Get followers for \(username)")
-        // Navigate to followers list view
+        navigateToFollowers = true
     }
 }
 
