@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct GithubfollowersappApp: App {
+struct GithubFollowersApp: App {
     var body: some Scene {
         WindowGroup {
             SearchView()
